@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Earc</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+
+    <link href="css/index.css" rel="stylesheet"/>
 </head>
 <body ng-controller="itemController">
 
+<div class="container">
+    <!-- logo -->
+    <div class="logo">
+        <img class="logoPicture" src="picture/logo.png"/>
+        <div class="logoDiv1 visible-lg-inline-block">
+            <span class="span1">WondersSearch.cn</span><br/>
+            <span class="span2">用心做最好的数据</span>
+        </div>
+        <div class="logoDiv2 pull-right" style="width:340px;height:40px;">
+            <span ng-click="toLogin()" class="logoLogin">登录</span>
+            <span ng-click="toRegist()" class="logoRegist">注册</span>
+        </div>
+        <span class="logoSerch pull-right">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" value="" placeholder="输入想要查询的数据"/>
+                <button class="pull-right"><span style="color:white">搜索</span></button>
+            </span>
+    </div>
 
-This is index document.{{name}}
-<button ng-click="toLogin()">login</button>
-<div ng-view></div>
+    <div ng-view></div>
+</div>
 
 
-<script src="js/import/angular.js"></script>
-<script src="js/import/angular-route.js"></script>
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
 <script src="js/index.js"></script>
+
 </body>
 </html>

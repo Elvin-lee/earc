@@ -1,0 +1,43 @@
+.logo{
+    margin-top:20px;
+}
+.logo .logoPicture{
+    padding-right:40px;border-right:2px solid gainsboro;
+}
+.logo .logoDiv1{
+    vertical-align:middle;margin-left:10px;
+}
+.logo .logoDiv1 .span1{
+    color: #44AEB5; font-size: 12px;
+}
+.logo .logoDiv1 .span2{
+    color:#9B9B9B;font-size: 12px;
+}
+.logo .logoDiv2 .logoLogin{
+    cursor:pointer;color: #44AEB5;padding-left:90px;padding-right:20px;border-right:2px solid gainsboro
+}
+.logo .logoDiv2 .logoLogin:hover{
+    color:green;
+}
+.logo .logoDiv2 .logoRegist{
+    cursor:pointer;color: #44AEB5;padding-left: 20px;
+}
+.logo .logoDiv2 .logoRegist:hover{
+    color:green;
+}
+.logo .logoSerch{
+    border:2px solid #44AEB5;width:340px;height:40px;
+}
+.logo .logoSerch button{
+    background-color:#44AEB5;border:0;height: 38px;width:60px;
+}
+.logo .logoSerch input{
+    width:250px;border:none;
+}
+.logo .logoSerch span{
+    margin: 10px 0 0 5px;color:#9B9B9B
+}
+input:focus {
+    border:none;
+    outline:none;
+}

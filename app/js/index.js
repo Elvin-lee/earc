@@ -14,5 +14,9 @@ var app = angular.module('item', ['ngRoute'], function($routeProvider){
 app.controller('itemController',function($scope){
     $scope.toLogin = function(){
         location.href = "login.html";
+    };
+    $scope.toRegist = function(){
+        location.href = "regist.html";
     }
+
 });
