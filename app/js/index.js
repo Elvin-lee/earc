@@ -11,12 +11,21 @@ var app = angular.module('item', ['ngRoute'], function($routeProvider){
         controller:'dynamicController'
     });
 });
-app.controller('itemController',function($scope){
+app.controller('itemController',function($scope,$timeout){
     $scope.toLogin = function(){
         location.href = "login.html";
     };
     $scope.toRegist = function(){
         location.href = "regist.html";
     }
+    $scope.flag = false;
+    $scope.showList = function () {
+        $scope.flag = true;
+        console.log($scope.flag);
+    };
+    $scope.hideList = function () {
+        $scope.flag = false;
+        console.log($scope.flag);
 
+    }
 });

@@ -9,7 +9,7 @@
     <link href="css/index.css" rel="stylesheet"/>
 </head>
 <body ng-controller="itemController">
-
+<!-- logo+nav -->
 <div class="container">
     <!-- logo -->
     <div class="logo">
@@ -18,22 +18,92 @@
             <span class="span1">WondersSearch.cn</span><br/>
             <span class="span2">用心做最好的数据</span>
         </div>
-        <div class="logoDiv2 pull-right" style="width:340px;height:40px;">
+        <div class="logoDiv2 pull-right">
             <span ng-click="toLogin()" class="logoLogin">登录</span>
             <span ng-click="toRegist()" class="logoRegist">注册</span>
         </div>
-        <span class="logoSerch pull-right">
+        <div class="logoSerch pull-right">
                 <span class="glyphicon glyphicon-search"></span>
                 <input type="text" value="" placeholder="输入想要查询的数据"/>
                 <button class="pull-right"><span style="color:white">搜索</span></button>
-            </span>
+            <div>
+                <span>违章查询</span>
+                <span>话费充值</span>
+                <span>激战</span>
+                <span>加油卡</span>
+                <span>火车</span>
+                <span>天气预报</span>
+            </div>
+        </div>
     </div>
+    <div class="nav">
+        <a ng-mouseover="showList()"><span>首页</span></a>
+        <a><span>API</span></a>
+        <a><span>动态</span></a>
+        <a><span>常见问题</span></a>
+    </div>
+    <!--  -->
+    <table ng-mouseleave="hideList()" ng-show="flag" class="table listTable" style="position:absolute;width: 260px;height: 360px;margin-top:15px">
+        <thead>
 
+        </thead>
+        <tbody>
+        <tr style="background-color: #44AEB5">
+            <td style="vertical-align:middle;text-align: center;"><span style="font-size: 20px">全部数据分类</span></td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle">
+                <span style="padding-left: 30px;">生活常用</span>
+                <span style="padding-right:10px;color:grey" class="pull-right">&gt;</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle">
+                <span style="padding-left: 30px;">休闲旅游</span>
+                <span style="padding-right:10px;color:grey" class="pull-right">&gt;</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle">
+                <span style="padding-left: 30px;">开发服务</span>
+                <span style="padding-right:10px;color:grey" class="pull-right">&gt;</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle">
+                <span style="padding-left: 30px;">金融基金</span>
+                <span style="padding-right:10px;color:grey" class="pull-right">&gt;</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align:middle">
+                <span style="padding-left: 30px;">其他服务</span>
+                <span style="padding-right:10px;color:grey" class="pull-right">&gt;</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr style="margin:9px 0px 3px 0px;color:grey;"/>
+
+
+
+<!-- switch picture -->
+<div>
+
+
+</div>
+
+<!-- content -->
+<div class="container">
     <div ng-view></div>
 </div>
 
+<!-- footer -->
+<div>
 
-
+</div>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>

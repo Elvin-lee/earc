@@ -1,3 +1,4 @@
+/*==================logo============================*/
 .logo{
     margin-top:20px;
 }
@@ -13,17 +14,20 @@
 .logo .logoDiv1 .span2{
     color:#9B9B9B;font-size: 12px;
 }
+.logo .logoDiv2{
+    margin-top:5px;width:340px;height:40px;
+}
 .logo .logoDiv2 .logoLogin{
-    cursor:pointer;color: #44AEB5;padding-left:90px;padding-right:20px;border-right:2px solid gainsboro
+    font-size: 20px;cursor:pointer;color: #44AEB5;padding-left:90px;padding-right:20px;border-right:2px solid gainsboro
 }
 .logo .logoDiv2 .logoLogin:hover{
-    color:green;
+    color:orange;
 }
 .logo .logoDiv2 .logoRegist{
-    cursor:pointer;color: #44AEB5;padding-left: 20px;
+    font-size: 20px;cursor:pointer;color: #44AEB5;padding-left: 20px;
 }
 .logo .logoDiv2 .logoRegist:hover{
-    color:green;
+    color:orange;
 }
 .logo .logoSerch{
     border:2px solid #44AEB5;width:340px;height:40px;
@@ -37,7 +41,43 @@
 .logo .logoSerch span{
     margin: 10px 0 0 5px;color:#9B9B9B
 }
+.logo .logoSerch div {
+    margin:15px 0px 0px 0px;
+    font-size: 12px;
+}
+.logo .logoSerch div span:hover{
+    color:#44AEB5;
+    cursor:pointer;
+}
 input:focus {
     border:none;
     outline:none;
+}
+/*====listTable===================================*/
+.listTable tr{
+    background-color: #3c3c3c;
+
+}
+
+.listTable tr td{
+    /*padding-left: 30px;padding-right:10px;*/
+    font-size: 16px;color:white;
+}
+
+
+/*==========nav=============================*/
+.nav{
+    margin: 40px 0px 0px 30px;
+}
+.nav span:hover{
+    cursor:pointer;
+    border-bottom:2px solid #44AEB5;
+}
+.nav span{
+    font-weight:bold;font-size: 20px;color:#44AEB5;margin-right: 20px;padding:0px 10px 10px 10px;
+}
+a:hover{
+
+    text-decoration:none;
+
 }
